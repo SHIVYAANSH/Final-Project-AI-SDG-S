@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use Hazardify.ai</title>
+    <link rel="icon" href="favicon (2).png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        :root {
+            --main-bg-color: #f0f0f0;
+            --main-text-color: #333;
+            --secondary-color: #007bff;
+            --secondary-text-color: white;
+        }
+
+        [data-theme="dark"] {
+            --main-bg-color: #121212;
+            --main-text-color: #e0e0e0;
+            --secondary-color: #0056b3;
+            --secondary-text-color: #b0b0b0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--secondary-color);
+            font-family: cursive;
+            font-size: 2rem;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, p {
+            text-align: left;
+        }
+
+        .warning {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 24px;
+            color: var(--secondary-color);
+            transition: color 0.3s;
+        }
+        #Shivi{
+                    
+            color:#3e99fa;
+            font-size:20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        #logo{
+            font-family:cursive;
+        }
+        #log1{
+            color:#007bff;
+            font-family:cursive;
+        }
+
+        .back-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+        .no-underline {
+            text-decoration: none; /* Removes underline from the link */
+        color:#007bff;
+    
+        color: #007bff;
+        font-family: cursive;
+        font-size: 2rem;
+      
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px; /* Adds space between the content and the footer */
+            font-size: 0.8rem; /* Smaller font size for the footer text */
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: var(--main-bg-color); /* Matches the theme's background color */
+            color: var(--main-text-color); /* Ensures the text color matches the theme */
+        }
+        
+        footer p {
+            margin: 0; /* Removes default paragraph margin */
+        }
+        h1{
+        color: #007bff;
+        font-family: cursive;
+        font-size: 2rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        <a href="index.html" style="color: #007bff; text-decoration: none;">
+            Hazardify.AI<br>
+            <div id="Shivi">
+            BY Shivyaansh
+            </div>
+        </a>
+    </h1>
+    <i class="fas fa-moon theme-toggle" onclick="toggleTheme()"></i>
+ 
+
+
+<div class="content">
+    <h1>How to Use <a href="index.html" class="no-underline"><span id="logo">Hazardify.AI</span></a></h1>
+
+    <p>Welcome to Hazardify.AI! This guide will walk you through the steps to effectively use our tool.</p>
+
+    <h2>Step 1: Upload Your Image</h2>
+    <p>Navigate to our main page and click on the "Choose file" button. Select the image you wish to analyze from your device.</p>
+
+    <h2>Step 2: Image Preview</h2>
+    <p>Upon selection, the image will be displayed on the screen. You can review the image to ensure it's the correct one for analysis.</p>
+
+    <h2>Step 3: Analysis</h2>
+    <p>Our AI will process the image and provide you with insights. The results will include classifications or predictions based on the image content.</p>
+
+    <h2>Step 4: Interpret Results</h2>
+    <p>Review the provided information to gain insights into the image. The tool offers a guide to understanding the potential categories or features detected in your image.</p>
+
+
+    <h2>Step 5: Safety First</h2>
+    <p>Your privacy is of utmost importance to us. <strong>No private data will be accessed, stored, or retained</strong> in our database at any time during your use of Hazardify.ai. Rest assured, your files and data remain completely secure and private when utilizing our tool.</p>
+
+
+    <div class="warning">
+        Please note: While we strive for accuracy, Hazardify.AI may not always provide correct results. Use it as a guide rather than a definitive answer.
+    </div>
+</div>
+
+
+
+<script>
+    function toggleTheme() {
+        const body = document.body;
+        const themeToggleIcon = document.querySelector('.theme-toggle');
+        const currentTheme = body.getAttribute('data-theme');
+
+        if (currentTheme === 'light') {
+            body.setAttribute('data-theme', 'dark');
+            themeToggleIcon.classList.remove('fa-moon');
+            themeToggleIcon.classList.add('fa-sun');
+        } else {
+            body.setAttribute('data-theme', 'light');
+            themeToggleIcon.classList.remove('fa-sun');
+            themeToggleIcon.classList.add('fa-moon');
+        }
+    }
+</script>
+
+<footer>
+    <p>&copy; 2024 Hazardify.AI. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
